@@ -10,30 +10,30 @@
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
       </AccessibilityProperties>
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="mRegistroPasajero">
+        <Menu class="javax.swing.JMenu" name="Registro">
           <Properties>
             <Property name="text" type="java.lang.String" value="Registro"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mRegistroPasajeroActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RegistroActionPerformed"/>
           </Events>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="botonRegistroPasajero">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pasajero"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="mRegistroPiloto">
+            <MenuItem class="javax.swing.JMenuItem" name="botonRegistroPiloto">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Piloto"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="mRegistroVuelo">
+            <MenuItem class="javax.swing.JMenuItem" name="botonRegistroVuelo">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Vuelo"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mRegistroVueloActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonRegistroVueloActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -61,7 +61,6 @@
             <MenuItem class="javax.swing.JMenuItem" name="mConsultaVuelo">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Vuelo"/>
-                <Property name="actionCommand" type="java.lang.String" value="Vuelo"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mConsultaPiloto">
@@ -76,7 +75,7 @@
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu4">
+        <Menu class="javax.swing.JMenu" name="botonSalir">
           <Properties>
             <Property name="text" type="java.lang.String" value="Salir"/>
           </Properties>

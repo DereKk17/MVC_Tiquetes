@@ -27,44 +27,44 @@ public class VistaPrin extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenuBar1 = new javax.swing.JMenuBar();
-        mRegistroPasajero = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        mRegistroPiloto = new javax.swing.JMenuItem();
-        mRegistroVuelo = new javax.swing.JMenuItem();
+        Registro = new javax.swing.JMenu();
+        botonRegistroPasajero = new javax.swing.JMenuItem();
+        botonRegistroPiloto = new javax.swing.JMenuItem();
+        botonRegistroVuelo = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         mReserva = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         mConsultaVuelo = new javax.swing.JMenuItem();
         mConsultaPiloto = new javax.swing.JMenuItem();
         mConsultaPasajero = new javax.swing.JMenuItem();
-        jMenu4 = new javax.swing.JMenu();
+        botonSalir = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenuBar1.setToolTipText("");
 
-        mRegistroPasajero.setText("Registro");
-        mRegistroPasajero.addActionListener(new java.awt.event.ActionListener() {
+        Registro.setText("Registro");
+        Registro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mRegistroPasajeroActionPerformed(evt);
+                RegistroActionPerformed(evt);
             }
         });
 
-        jMenuItem1.setText("Pasajero");
-        mRegistroPasajero.add(jMenuItem1);
+        botonRegistroPasajero.setText("Pasajero");
+        Registro.add(botonRegistroPasajero);
 
-        mRegistroPiloto.setText("Piloto");
-        mRegistroPasajero.add(mRegistroPiloto);
+        botonRegistroPiloto.setText("Piloto");
+        Registro.add(botonRegistroPiloto);
 
-        mRegistroVuelo.setText("Vuelo");
-        mRegistroVuelo.addActionListener(new java.awt.event.ActionListener() {
+        botonRegistroVuelo.setText("Vuelo");
+        botonRegistroVuelo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mRegistroVueloActionPerformed(evt);
+                botonRegistroVueloActionPerformed(evt);
             }
         });
-        mRegistroPasajero.add(mRegistroVuelo);
+        Registro.add(botonRegistroVuelo);
 
-        jMenuBar1.add(mRegistroPasajero);
+        jMenuBar1.add(Registro);
 
         jMenu3.setText("Reservar");
 
@@ -81,7 +81,6 @@ public class VistaPrin extends javax.swing.JFrame {
         jMenu2.setText("Consultar");
 
         mConsultaVuelo.setText("Vuelo");
-        mConsultaVuelo.setActionCommand("Vuelo");
         jMenu2.add(mConsultaVuelo);
 
         mConsultaPiloto.setText("Piloto");
@@ -92,8 +91,8 @@ public class VistaPrin extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu4.setText("Salir");
-        jMenuBar1.add(jMenu4);
+        botonSalir.setText("Salir");
+        jMenuBar1.add(botonSalir);
 
         setJMenuBar(jMenuBar1);
         jMenuBar1.getAccessibleContext().setAccessibleName("");
@@ -112,13 +111,13 @@ public class VistaPrin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void mRegistroPasajeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mRegistroPasajeroActionPerformed
+    private void RegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistroActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_mRegistroPasajeroActionPerformed
+    }//GEN-LAST:event_RegistroActionPerformed
 
-    private void mRegistroVueloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mRegistroVueloActionPerformed
+    private void botonRegistroVueloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistroVueloActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_mRegistroVueloActionPerformed
+    }//GEN-LAST:event_botonRegistroVueloActionPerformed
 
     private void mReservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mReservaActionPerformed
         // TODO add your handling code here:
@@ -160,17 +159,17 @@ public class VistaPrin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Registro;
+    private javax.swing.JMenuItem botonRegistroPasajero;
+    private javax.swing.JMenuItem botonRegistroPiloto;
+    private javax.swing.JMenuItem botonRegistroVuelo;
+    private javax.swing.JMenu botonSalir;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem mConsultaPasajero;
     private javax.swing.JMenuItem mConsultaPiloto;
     private javax.swing.JMenuItem mConsultaVuelo;
-    private javax.swing.JMenu mRegistroPasajero;
-    private javax.swing.JMenuItem mRegistroPiloto;
-    private javax.swing.JMenuItem mRegistroVuelo;
     private javax.swing.JMenuItem mReserva;
     // End of variables declaration//GEN-END:variables
 }
