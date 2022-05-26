@@ -10,9 +10,12 @@ import Vista.VistaRegistroPasajero;
 import Vista.VistaRegistroPilotos;
 import Modelo.dao.PilotoDao;
 import Modelo.dao.PasajeroDao;
+import Modelo.dto.Piloto;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Modelo.dto.Vuelo;
+import Vista.VistaReserva;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,13 +25,9 @@ import javax.swing.JOptionPane;
 public class ControladorPrin implements ActionListener {
     
     private VistaPrin vistaPrin;
-    private PasajeroDao modeloPasajero;
-    private PilotoDao modeloPiloto;
 
     public ControladorPrin(VistaPrin vistaPrin) {
         this.vistaPrin = vistaPrin;
-        this.modeloPasajero = modeloPasajero;
-        this.modeloPiloto = modeloPiloto;
         this.vistaPrin.botonRegistroPasajero.addActionListener(this);
         this.vistaPrin.botonRegistroPiloto.addActionListener(this);
         this.vistaPrin.botonRegistroVuelo.addActionListener(this);
@@ -51,9 +50,11 @@ public class ControladorPrin implements ActionListener {
             ControladorRegistroPiloto controlPiloto = new ControladorRegistroPiloto(new VistaRegistroPilotos(),new PilotoDao());
            
         }
+        else if(e.getSource().equals(this.vistaPrin.mReserva)){
+            ControladorReserva controlReserva = new ControladorReserva(new VistaReserva());
+        }
         else if(e.getSource().equals(this.vistaPrin.botonRegistroVuelo)){
-            
-            if(modeloPiloto.listaPilotos.isEmpty() && modeloPasajero.listaPasajeros.isEmpty()){
+            if(PilotoDao.listaPilotos.isEmpty() && PasajeroDao.listaPasajeros.isEmpty()){
                  JOptionPane.showMessageDialog(null,"No hay Pilotos Registrados o Pasajeros");
             }
             else{
@@ -62,12 +63,11 @@ public class ControladorPrin implements ActionListener {
                 vueloNuevo.setAsientos((int) (Math.random()*((200 - 100) + 1)));
                 vueloNuevo.setSalida("Colombia");
                 vueloNuevo.setDestino("mexico");
-                vueloNuevo.setDatosPiloto(modeloPiloto.listaPilotos.get((int) (Math.random()*((modeloPiloto.listaPilotos.size() - 1) + 1))));
+                vueloNuevo.setDatosPiloto(PilotoDao.listaPilotos.get((int) (Math.random()*((PilotoDao.listaPilotos.size() - 1) + 1))));
              
- 
+                JOptionPane.showMessageDialog(null,"se creo el vuelo con exito ");               
             }
             
-           
         }
         else if(e.getSource().equals(this.vistaPrin.botonSalir)){
             System.exit(0);

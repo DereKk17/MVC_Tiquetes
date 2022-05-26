@@ -69,11 +69,6 @@ public class VistaPrin extends javax.swing.JFrame {
         jMenu3.setText("Reservar");
 
         mReserva.setText("Adquirir Tiquete");
-        mReserva.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mReservaActionPerformed(evt);
-            }
-        });
         jMenu3.add(mReserva);
 
         jMenuBar1.add(jMenu3);
@@ -118,10 +113,6 @@ public class VistaPrin extends javax.swing.JFrame {
     private void botonRegistroVueloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistroVueloActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botonRegistroVueloActionPerformed
-
-    private void mReservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mReservaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mReservaActionPerformed
 
     /**
      * @param args the command line arguments

@@ -12,18 +12,42 @@ import java.util.ArrayList;
  * @author derekmac
  */
 public class PasajeroDao {
-    public ArrayList<Pasajero> listaPasajeros;
+    
+    public static final ArrayList<Pasajero> listaPasajeros = new ArrayList();
 
     public PasajeroDao() {
-        this.listaPasajeros = new ArrayList();
     }
+
     
     public boolean registrarPasajero(Pasajero pasajero){
         return listaPasajeros.add(pasajero);
     }
+    
+    public boolean verificarPasajero(int id){
+        Pasajero pasajero = null;
+        for(Pasajero s : listaPasajeros){
+           if(s.getId() == id){
+              pasajero = s;
+              break;
+           }
+        }
+        return true; 
+    }
+    
+    public Pasajero consultarPasajero(int id){
+         Pasajero pasajero = null;
+        for(Pasajero s : listaPasajeros){
+           if(s.getId() == id){
+              pasajero = s;
+              break;
+           }
+        }
+        return pasajero; 
+    }
+   
      
-    public ArrayList<Pasajero> consultarPasajeros(){
-        return this.listaPasajeros;
+    public static ArrayList<Pasajero> consultarPasajeros(){
+        return PasajeroDao.listaPasajeros;
     }
     
 }

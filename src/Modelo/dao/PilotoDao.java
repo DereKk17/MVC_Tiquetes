@@ -12,11 +12,9 @@ import java.util.ArrayList;
  * @author derekmac
  */
 public class PilotoDao {
-    public  ArrayList<Piloto> listaPilotos;
+    public static final ArrayList<Piloto> listaPilotos = new ArrayList();
 
-    public PilotoDao() {
-        this.listaPilotos = new ArrayList();
-    }
+    
     
     public boolean registrarPiloto(Piloto piloto){
         return listaPilotos.add(piloto);
@@ -24,7 +22,7 @@ public class PilotoDao {
     
     
     public  ArrayList<Piloto> contultarPilotos(){
-        return listaPilotos;
+        return PilotoDao.listaPilotos;
     }
     
    

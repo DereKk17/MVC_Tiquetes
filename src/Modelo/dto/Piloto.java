@@ -13,15 +13,9 @@ public class Piloto {
     private int hrsVuelo;
     private String nombre;
 
-    public Piloto(int hrsVuelo, String nombre) {
-        this.hrsVuelo = hrsVuelo;
-        this.nombre = nombre;
-    }
-
     public Piloto() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
     }
-    
 
     public int getHrsVuelo() {
         return hrsVuelo;
