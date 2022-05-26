@@ -180,15 +180,15 @@ public class VistaRegistroPasajero extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonRegistroPasajero;
-    private javax.swing.JTextField edadPasajero;
-    private javax.swing.JTextField generoPasajero;
-    private javax.swing.JTextField identificacionPasajero;
+    public javax.swing.JButton botonRegistroPasajero;
+    public javax.swing.JTextField edadPasajero;
+    public javax.swing.JTextField generoPasajero;
+    public javax.swing.JTextField identificacionPasajero;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField nombrePasajero;
+    public javax.swing.JTextField nombrePasajero;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,10 +4,22 @@
  */
 package Modelo.dao;
 
+import Modelo.dto.Pasajero;
+import java.util.ArrayList;
+
 /**
  *
  * @author derekmac
  */
 public class PasajeroDao {
+    private static ArrayList<Pasajero> listaPasajeros;
+
+    public PasajeroDao() {
+        this.listaPasajeros = new ArrayList();
+    }
+    
+    public static boolean registrarPasajero(Pasajero pasajero){
+        return listaPasajeros.add(pasajero);
+    }
     
 }

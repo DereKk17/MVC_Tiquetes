@@ -10,4 +10,35 @@ package Modelo.dto;
  */
 public class Piloto {
     
+    private int hrsVuelo;
+    private String nombre;
+
+    public Piloto(int hrsVuelo, String nombre) {
+        this.hrsVuelo = hrsVuelo;
+        this.nombre = nombre;
+    }
+    
+
+    public int getHrsVuelo() {
+        return hrsVuelo;
+    }
+
+    public void setHrsVuelo(int hrsVuelo) {
+        this.hrsVuelo = hrsVuelo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + hrsVuelo;
+    }
+    
+    
 }

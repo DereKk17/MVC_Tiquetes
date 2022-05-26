@@ -26,15 +26,15 @@ public class VistaConsultaPiloto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        consultaPiloto = new javax.swing.JLabel();
+        JLabelCPiloto = new javax.swing.JLabel();
         botonConsultaPilotos = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        consultaPiloto.setFont(new java.awt.Font("Hiragino Sans GB", 0, 18)); // NOI18N
-        consultaPiloto.setText("Consulta de Pilotos");
+        JLabelCPiloto.setFont(new java.awt.Font("Hiragino Sans GB", 0, 18)); // NOI18N
+        JLabelCPiloto.setText("Consulta de Pilotos");
 
         botonConsultaPilotos.setText("Consultar");
 
@@ -68,7 +68,7 @@ public class VistaConsultaPiloto extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 446, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(consultaPiloto)
+                        .addComponent(JLabelCPiloto)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(botonConsultaPilotos)))
                 .addContainerGap())
@@ -79,7 +79,7 @@ public class VistaConsultaPiloto extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(botonConsultaPilotos)
-                    .addComponent(consultaPiloto))
+                    .addComponent(JLabelCPiloto))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -124,8 +124,8 @@ public class VistaConsultaPiloto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JLabelCPiloto;
     private javax.swing.JButton botonConsultaPilotos;
-    private javax.swing.JLabel consultaPiloto;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

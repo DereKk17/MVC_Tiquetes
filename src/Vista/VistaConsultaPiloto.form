@@ -28,7 +28,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jScrollPane1" pref="446" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="consultaPiloto" min="-2" max="-2" attributes="0"/>
+                      <Component id="JLabelCPiloto" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="botonConsultaPilotos" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -43,7 +43,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="botonConsultaPilotos" min="-2" max="-2" attributes="0"/>
-                  <Component id="consultaPiloto" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLabelCPiloto" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
@@ -53,7 +53,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="consultaPiloto">
+    <Component class="javax.swing.JLabel" name="JLabelCPiloto">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Hiragino Sans GB" size="18" style="0"/>
