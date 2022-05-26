@@ -17,7 +17,7 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ControladorPrin inicio = new ControladorPrin(new VistaPrin);
+        ControladorPrin inicio = new ControladorPrin(new VistaPrin());
     }
     
 }
