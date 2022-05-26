@@ -12,18 +12,18 @@ import java.util.ArrayList;
  * @author derekmac
  */
 public class PilotoDao {
-    public static ArrayList<Piloto> listaPilotos;
+    public  ArrayList<Piloto> listaPilotos;
 
     public PilotoDao() {
         this.listaPilotos = new ArrayList();
     }
     
-    public static boolean registrarPiloto(Piloto piloto){
+    public boolean registrarPiloto(Piloto piloto){
         return listaPilotos.add(piloto);
     }
     
     
-    public static ArrayList<Piloto> contultarPilotos(){
+    public  ArrayList<Piloto> contultarPilotos(){
         return listaPilotos;
     }
     

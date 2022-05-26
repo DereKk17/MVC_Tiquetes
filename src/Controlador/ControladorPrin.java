@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -21,9 +22,13 @@ import javax.swing.JOptionPane;
 public class ControladorPrin implements ActionListener {
     
     private VistaPrin vistaPrin;
+    private PasajeroDao modeloPasajero;
+    private PilotoDao modeloPiloto;
 
     public ControladorPrin(VistaPrin vistaPrin) {
         this.vistaPrin = vistaPrin;
+        this.modeloPasajero = modeloPasajero;
+        this.modeloPiloto = modeloPiloto;
         this.vistaPrin.botonRegistroPasajero.addActionListener(this);
         this.vistaPrin.botonRegistroPiloto.addActionListener(this);
         this.vistaPrin.botonRegistroVuelo.addActionListener(this);
@@ -37,16 +42,18 @@ public class ControladorPrin implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+      
+        
         if(e.getSource().equals(this.vistaPrin.botonRegistroPasajero)){
-            ControladorRegistroPasajero controlPasajero = new ControladorRegistroPasajero(new VistaRegistroPasajero());
+            ControladorRegistroPasajero controlPasajero = new ControladorRegistroPasajero(new VistaRegistroPasajero(),new PasajeroDao());
         }
         else if(e.getSource().equals(this.vistaPrin.botonRegistroPiloto)){
-            ControladorRegistroPiloto controlPiloto = new ControladorRegistroPiloto(new VistaRegistroPilotos());
+            ControladorRegistroPiloto controlPiloto = new ControladorRegistroPiloto(new VistaRegistroPilotos(),new PilotoDao());
            
         }
         else if(e.getSource().equals(this.vistaPrin.botonRegistroVuelo)){
             
-            if(PilotoDao.listaPilotos.isEmpty() && PasajeroDao.listaPasajeros.isEmpty()){
+            if(modeloPiloto.listaPilotos.isEmpty() && modeloPasajero.listaPasajeros.isEmpty()){
                  JOptionPane.showMessageDialog(null,"No hay Pilotos Registrados o Pasajeros");
             }
             else{
@@ -55,7 +62,7 @@ public class ControladorPrin implements ActionListener {
                 vueloNuevo.setAsientos((int) (Math.random()*((200 - 100) + 1)));
                 vueloNuevo.setSalida("Colombia");
                 vueloNuevo.setDestino("mexico");
-                vueloNuevo.setDatosPiloto(PilotoDao.listaPilotos.get((int) (Math.random()*((PilotoDao.listaPilotos.size() - 1) + 1))));
+                vueloNuevo.setDatosPiloto(modeloPiloto.listaPilotos.get((int) (Math.random()*((modeloPiloto.listaPilotos.size() - 1) + 1))));
              
  
             }

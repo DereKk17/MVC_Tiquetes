@@ -4,7 +4,7 @@
  */
 package Modelo.dto;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  *
@@ -17,7 +17,7 @@ public class Vuelo {
     private String destino;
     private Piloto datosPiloto;
     private int asientos;
-    private List<Pasajero> listaPasajeros;
+    private ArrayList<Pasajero> listaPasajeros;
     
     
 
@@ -61,11 +61,11 @@ public class Vuelo {
         this.asientos = asientos;
     }
 
-    public List<Pasajero> getListaPasajeros() {
+    public ArrayList<Pasajero> getListaPasajeros() {
         return listaPasajeros;
     }
 
-    public void setListaPasajeros(List<Pasajero> listaPasajeros) {
+    public void setListaPasajeros(ArrayList<Pasajero> listaPasajeros) {
         this.listaPasajeros = listaPasajeros;
     }
 

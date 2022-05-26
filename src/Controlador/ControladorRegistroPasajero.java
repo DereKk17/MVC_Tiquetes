@@ -18,13 +18,17 @@ import javax.swing.JOptionPane;
 public class ControladorRegistroPasajero implements ActionListener {
     
     private VistaRegistroPasajero vistaPasajero;
+    private PasajeroDao modelo;
 
-    public ControladorRegistroPasajero(VistaRegistroPasajero vistaPasajero) {
+    public ControladorRegistroPasajero(VistaRegistroPasajero vistaPasajero,PasajeroDao modelo) {
         this.vistaPasajero = vistaPasajero;
+        this.modelo = modelo;
         this.vistaPasajero.botonRegistroPasajero.addActionListener(this);
         this.vistaPasajero.setVisible(true);
         
     }
+
+  
     
     
     
@@ -40,11 +44,11 @@ public class ControladorRegistroPasajero implements ActionListener {
             
             Pasajero pasajero = new Pasajero(edad, id, genero, nombre);
             
-            if(PasajeroDao.registrarPasajero(pasajero)){
-                JOptionPane.showMessageDialog(null, "El Registro del Pasajero Fue exitosos");
+            if(!modelo.registrarPasajero(pasajero)){
+                JOptionPane.showMessageDialog(null, "hubo un error en el registro, vuelva a intentarlo");
             }
             else{
-                JOptionPane.showMessageDialog(null, "hubo un error en el registro, vuelva a intentarlo");
+                JOptionPane.showMessageDialog(null, "El Registro del Pasajero Fue exitosos");
             }
             
             vistaPasajero.identificacionPasajero.setText("");
