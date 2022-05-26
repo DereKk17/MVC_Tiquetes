@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author derekmac
  */
 public class PasajeroDao {
-    private static ArrayList<Pasajero> listaPasajeros;
+    public static ArrayList<Pasajero> listaPasajeros;
 
     public PasajeroDao() {
         this.listaPasajeros = new ArrayList();

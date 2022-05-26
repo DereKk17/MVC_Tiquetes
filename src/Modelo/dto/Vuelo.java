@@ -18,6 +18,8 @@ public class Vuelo {
     private Piloto datosPiloto;
     private int asientos;
     private List<Pasajero> listaPasajeros;
+    
+    
 
     public int getCodigo() {
         return codigo;
@@ -71,6 +73,7 @@ public class Vuelo {
     public String toString() {
         return  codigo + salida + destino + datosPiloto + asientos + listaPasajeros;
     }
+    
     
     
     

@@ -160,16 +160,16 @@ public class VistaPrin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Registro;
-    private javax.swing.JMenuItem botonRegistroPasajero;
-    private javax.swing.JMenuItem botonRegistroPiloto;
-    private javax.swing.JMenuItem botonRegistroVuelo;
-    private javax.swing.JMenu botonSalir;
+    public javax.swing.JMenuItem botonRegistroPasajero;
+    public javax.swing.JMenuItem botonRegistroPiloto;
+    public javax.swing.JMenuItem botonRegistroVuelo;
+    public javax.swing.JMenu botonSalir;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem mConsultaPasajero;
-    private javax.swing.JMenuItem mConsultaPiloto;
-    private javax.swing.JMenuItem mConsultaVuelo;
-    private javax.swing.JMenuItem mReserva;
+    public javax.swing.JMenuItem mConsultaPasajero;
+    public javax.swing.JMenuItem mConsultaPiloto;
+    public javax.swing.JMenuItem mConsultaVuelo;
+    public javax.swing.JMenuItem mReserva;
     // End of variables declaration//GEN-END:variables
 }

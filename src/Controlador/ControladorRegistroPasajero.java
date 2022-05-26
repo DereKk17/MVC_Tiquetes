@@ -17,12 +17,12 @@ import javax.swing.JOptionPane;
  */
 public class ControladorRegistroPasajero implements ActionListener {
     
-    private VistaRegistroPasajero vista;
+    private VistaRegistroPasajero vistaPasajero;
 
-    public ControladorRegistroPasajero(VistaRegistroPasajero vista) {
-        this.vista = vista;
-        this.vista.botonRegistroPasajero.addActionListener(this);
-        this.vista.setVisible(true);
+    public ControladorRegistroPasajero(VistaRegistroPasajero vistaPasajero) {
+        this.vistaPasajero = vistaPasajero;
+        this.vistaPasajero.botonRegistroPasajero.addActionListener(this);
+        this.vistaPasajero.setVisible(true);
         
     }
     
@@ -31,12 +31,12 @@ public class ControladorRegistroPasajero implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(this.vista.botonRegistroPasajero)){
+        if (e.getSource().equals(this.vistaPasajero.botonRegistroPasajero)){
             
-            int id = Integer.valueOf(this.vista.identificacionPasajero.getText());
-            String genero = this.vista.generoPasajero.getText();
-            String nombre = vista.nombrePasajero.getText();
-            int edad = Integer.valueOf(vista.edadPasajero.getText());
+            int id = Integer.valueOf(this.vistaPasajero.identificacionPasajero.getText());
+            String genero = this.vistaPasajero.generoPasajero.getText();
+            String nombre = this.vistaPasajero.nombrePasajero.getText();
+            int edad = Integer.valueOf(this.vistaPasajero.edadPasajero.getText());
             
             Pasajero pasajero = new Pasajero(edad, id, genero, nombre);
             
@@ -47,11 +47,12 @@ public class ControladorRegistroPasajero implements ActionListener {
                 JOptionPane.showMessageDialog(null, "hubo un error en el registro, vuelva a intentarlo");
             }
             
-            vista.identificacionPasajero.setText("");
-            vista.edadPasajero.setText("");
-            vista.nombrePasajero.setText("");
-            vista.generoPasajero.setText("");
+            vistaPasajero.identificacionPasajero.setText("");
+            vistaPasajero.edadPasajero.setText("");
+            vistaPasajero.nombrePasajero.setText("");
+            vistaPasajero.generoPasajero.setText("");
         }
     }
     
 }
+

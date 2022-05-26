@@ -6,6 +6,7 @@ package mvc_final;
 
 
 import Vista.VistaPrin;
+import Controlador.ControladorPrin;
 /**
  *
  * @author derekmac
@@ -16,7 +17,7 @@ public class App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        ControladorPrin inicio = new ControladorPrin(new VistaPrin);
     }
     
 }

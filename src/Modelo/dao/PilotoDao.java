@@ -4,10 +4,28 @@
  */
 package Modelo.dao;
 
+import Modelo.dto.Piloto;
+import java.util.ArrayList;
+
 /**
  *
  * @author derekmac
  */
 public class PilotoDao {
+    public static ArrayList<Piloto> listaPilotos;
+
+    public PilotoDao() {
+        this.listaPilotos = new ArrayList();
+    }
+    
+    public static boolean registrarPiloto(Piloto piloto){
+        return listaPilotos.add(piloto);
+    }
+    
+    public static ArrayList<Piloto> contultarPilotos(){
+        return listaPilotos;
+    }
+    
+   
     
 }

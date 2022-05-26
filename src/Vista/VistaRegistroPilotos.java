@@ -133,10 +133,10 @@ public class VistaRegistroPilotos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonRegistroPiloto;
-    private javax.swing.JTextField hrsVuelo;
+    public javax.swing.JButton botonRegistroPiloto;
+    public javax.swing.JTextField hrsVuelo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField nombrePiloto;
+    public javax.swing.JTextField nombrePiloto;
     // End of variables declaration//GEN-END:variables
 }

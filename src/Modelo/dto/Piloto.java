@@ -17,6 +17,10 @@ public class Piloto {
         this.hrsVuelo = hrsVuelo;
         this.nombre = nombre;
     }
+
+    public Piloto() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 
     public int getHrsVuelo() {
@@ -39,6 +43,7 @@ public class Piloto {
     public String toString() {
         return nombre + hrsVuelo;
     }
+   
     
     
 }
