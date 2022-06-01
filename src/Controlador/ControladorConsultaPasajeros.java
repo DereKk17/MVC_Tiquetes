@@ -22,13 +22,17 @@ public class ControladorConsultaPasajeros implements ActionListener{
     
     
 
-    public ControladorConsultaPasajeros(VistaConsultaPasajeros vista, PasajeroDao modelo) {
+    public ControladorConsultaPasajeros(VistaConsultaPasajeros vista) {
         this.vista = vista;
         this.modelo = modelo;
         this.vista.botonConsultaPasajeros.addActionListener(this);
         this.modelotabla = (DefaultTableModel) this.vista.jTable1.getModel();
         this.vista.setVisible(true);
     }
+
+    
+
+    
     
     
     

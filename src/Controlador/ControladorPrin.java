@@ -14,6 +14,9 @@ import Modelo.dto.Piloto;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import Modelo.dto.Vuelo;
+import Vista.VistaConsultaPasajeros;
+import Vista.VistaConsultaPiloto;
+import Vista.VistaConsultaVuelos;
 import Vista.VistaReserva;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -33,6 +36,10 @@ public class ControladorPrin implements ActionListener {
         this.vistaPrin.botonRegistroVuelo.addActionListener(this);
         this.vistaPrin.botonSalir.addActionListener(this);
         
+        this.vistaPrin.mConsultaPasajero.addActionListener(this);
+        this.vistaPrin.mConsultaPiloto.addActionListener(this);
+        this.vistaPrin.mConsultaVuelo.addActionListener(this);
+        this.vistaPrin.mReserva.addActionListener(this);
         this.vistaPrin.setVisible(true);
     }
     
@@ -69,14 +76,23 @@ public class ControladorPrin implements ActionListener {
             }
             
         }
+        else if(e.getSource().equals(this.vistaPrin.mConsultaPasajero)){
+            ControladorConsultaPasajeros consultapasajeros = new ControladorConsultaPasajeros(new VistaConsultaPasajeros());
+            
+        }
+       else if(e.getSource().equals(this.vistaPrin.mConsultaPiloto)){
+            ControladorConsultaPilotos consultapilotos = new ControladorConsultaPilotos(new VistaConsultaPiloto());}
+
+       else if(e.getSource().equals(this.vistaPrin.mConsultaVuelo)){
+            ControladorConsultaVuelos consultavuelos = new ControladorConsultaVuelos(new VistaConsultaVuelos());    
+        }
+       
         else if(e.getSource().equals(this.vistaPrin.botonSalir)){
             System.exit(0);
+                   
         }
-            
-           
+        
+        
+    
     }
-        
-        
-    
-    
 }

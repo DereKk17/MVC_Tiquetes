@@ -20,13 +20,15 @@ public class ControladorConsultaPilotos implements ActionListener {
     private PilotoDao modelo;
     private DefaultTableModel modelotabla;
 
-    public ControladorConsultaPilotos(VistaConsultaPiloto vista, PilotoDao modelo) {
+    public ControladorConsultaPilotos(VistaConsultaPiloto vista) {
         this.vista = vista;
         this.modelo = modelo;
         this.modelotabla = (DefaultTableModel) this.vista.jTable1.getModel();
         this.vista.botonConsultaPilotos.addActionListener(this);
         this.vista.setVisible(true);
     }
+
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
