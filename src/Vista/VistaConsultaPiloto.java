@@ -125,8 +125,8 @@ public class VistaConsultaPiloto extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel JLabelCPiloto;
-    private javax.swing.JButton botonConsultaPilotos;
+    public javax.swing.JButton botonConsultaPilotos;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    public javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }
